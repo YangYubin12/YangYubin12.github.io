@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀Yang Yubin</title>
+    <link rel="stylesheet" href="화면구현개인프로젝트.css">
+</head>
+
+<body>
+    <header id="header">
+        <h2>Yang Yubin</h2>
+        <nav>
+            <ul>
+                <li><a href="#1">MAIN</a></li>
+                <li><a href="#2">SKILLS</a></li>
+                <li><a href="#3">GRAPH</a></li>
+                <li><a href="#4">TMI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header_bar"></div>
+    </div>
+    <a style="display:flex; position:fixed; bottom:30px; right:30px; height: 50px; width: 50px; z-index: 10;" href="#header" title="맨위로">
+        <img src="./topbutton.png">
+    </a>
+    <br><br><br><br>
+    <h1 id="black">🍒HELLO, I'M YANG YUBIN!🍒<br>Do you want to know about me?</h1>
+    <br><br><br><br>
+    <div id="item">
+        <button class="tablinks w-btn-neon1" type="button" class="over" id="open" onclick="showDetail()">Yang
+            Yubin??<br>Click this button!</button>
+        <div id="desc" class="detail">
+            <h2>성실하고 목표지향적인 양유빈입니다!</h2>
+            <h2>Yang Yubin</h2>
+            <img class="imgJ" src="./증사.jpg">
+            <p>이름: 양유빈</p>
+            <p>MBTI: INFJ</h4>
+            <p>생년월일: 2006년 5월 12일 (17살)</p>
+            <p>부산소프트웨어마이스터고등학교 재학 중</p>
+            <p><a href="https://github.com/YangYubin12">github: https://github.com/YangYubin12(링크 누르면 이동)</a></p>
+            <p>phone: 010-5812-5311</p>
+            <br>
+            <button class="w-btn-pink-outline w-btn-outline" type="button" id="close"
+                onclick="hideDetail()">close</button>
+        </div>
+    </div>
+    <br><br><br id = "2"><br><br><br><br><br><br>
+
+    <h2>MY SKILLS</h2>
+    <br>
+
+    <p>C</p>
+    <div class="container">
+        <div class="skills c">70%</div>
+    </div>
+
+    <p>HTML, CSS</p>
+    <div class="container">
+        <div class="skills html">60%</div>
+    </div>
+
+    <p>COFFEE</p>
+    <div class="container">
+        <div class="skills css">80%</div>
+    </div>
+
+    <p>문서작성능력</p>
+    <div class="container">
+        <div class="skills js">90%</div>
+    </div>
+    <br><br><br><br><br><br><br id = "3"><br><br><br><br><br>
+
+    <h2>IN MY HEAD</h2>
+    <h3 class="gray">그래프 위에 마우스를 올려보세요!</h3><br>
+
+    <div id="piechart"></div>
+    <br><br><br><br id = "4"><br><br><br><br><br><br><br><br>
+
+    <h2 class="black">If you want to know about me?</h2>
+    <h1 class="gray">Click this button and drag down!:</h1>
+    <br>
+    <div class="tab">
+        <button class="tablinks w-btn-neon2" onclick="openCity(this, 'Paris')">LIKES</button>
+        <button class="tablinks w-btn-neon2" onclick="openCity(this, 'London')">LICENSE</button>
+        <button class="tablinks w-btn-neon2" onclick="openCity(this, 'Tokyo')">TMI</button>
+    </div>
+    <br><br>
+    <div id="Paris" class="tabcontent">
+        <br>
+        <h2>LIKES</h2><br>
+        <img width="210" height="280" class="imgani" src="./고양이.jpg">
+        <img width="210" height="280" class="imgani" src="./마카롱.jpg">
+        <img width="210" height="280" class="imgani" src="./카페.jpg">
+        <img width="210" height="280" class="imgani" src="./카페2.jpg">
+        <img width="280" height="280" class="imgani" src="./스콘.jpg">
+        <img width="290" height="280" class="imgani" src="./야경.jpg">
+    </div>
+    <br>
+    <div id="London" class="tabcontent">
+        <h2>LICENSE</h2><br>
+        <p>커피바리스타 1급</p>
+        <p>커피바리스타 2급</p>
+        <p>ITQ OA MASTER <br>(아래한글, MS워드, 한글엑셀, 한글파워포인트) </p>
+        <p>한자능력급수증 5급</p>
+        <p>종이접기 급수증 어린이1급</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h2>TMI</h2><br>
+        <p>🐥1일 1커밋 실천 중!🐥</p>
+        <p><b>독일어</b> 배우는 중</p>
+        <p><b>젤리, 마카롱</b> 좋아함</p>
+        <p>샐러드 사랑함</p>
+        <p>추어탕, 당근 싫어함</p>
+        <p>뷰러 잘함 속눈썹 장인</p>
+        <p>겁이 많음, 잘 놀람</p>
+        <p>프랑스자수, 라탄공예 좋아함</p>
+        <p>예쁜 카페 찾아다니는 거 좋아함</p>
+        <p>부산소프트웨어마이스터고 방송부</p>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./app.js"></script>
+    <pre id="foo">
+        <div id="footer_text"><br>phone: 010-5812-5311     mail: yubinininin@gmail.com      <br><br><a href="https://github.com/YangYubin12">github: https://github.com/YangYubin12</a></div>
+    </pre>
+</body>
+</html>
